@@ -1,0 +1,13 @@
+<kat-layout>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+      <kat-sidenav-list (sidenavClose)="sidenav.close()"></kat-sidenav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <kat-header (sidenavToggle)="sidenav.toggle()"></kat-header>
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</kat-layout>

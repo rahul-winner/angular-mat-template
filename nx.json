@@ -1,0 +1,39 @@
+{
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "kat",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "panel-app": {
+      "tags": []
+    },
+    "panel-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["panel-app"]
+    },
+    "shared": {
+      "tags": []
+    },
+    "features": {
+      "tags": []
+    },
+    "core": {
+      "tags": []
+    }
+  }
+}
