@@ -1,6 +1,6 @@
 
 
-# WatProjectNg
+# Sample Nx Project
 
 This project was generated using [Nx](https://nx.dev).
 
